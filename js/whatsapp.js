@@ -1,8 +1,7 @@
 (function () {
-    var PHONE = "917013421842";
-    var CONNECT = "https://wa.me/" + PHONE + "?text=Hi%20Nikhil%2C%20I%27d%20like%20to%20connect%20with%20you.";
-    var CALL = "https://wa.me/" + PHONE + "?text=Hi%20Nikhil%2C%20I%27d%20like%20to%20book%20a%20free%20clarity%20call.";
-
+    var PHONE = "919703318999";
+    var TEXT = "Hi Nikhil, I came across EASE with Nikhil and I'd like to know more about your 1:1 Emotional Wellness Guidance.";
+    var URL = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(TEXT);
 
     function textOf(el) {
         return ((el && el.textContent) || "").replace(/\s+/g, " ").trim();
@@ -15,13 +14,9 @@
         var t = textOf(a);
         var href = a.getAttribute("href") || "";
 
-        if (/Connect With Me/i.test(t)) return { a: a, url: CONNECT };
-        if (/Get a FREE clarity call/i.test(t)) return { a: a, url: CALL };
-
-        if (/wa\.me\/(?:91)?9703318999|api\.whatsapp\.com|919703318999/i.test(href)) {
-            if (/connect/i.test(href)) return { a: a, url: CONNECT };
-            return { a: a, url: CALL };
-        }
+        if (/Connect With Me/i.test(t)) return { a: a, url: URL };
+        if (/Get a FREE clarity call/i.test(t)) return { a: a, url: URL };
+        if (/wa\.me\/|api\.whatsapp\.com/i.test(href)) return { a: a, url: URL };
 
         return null;
     }
