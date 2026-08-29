@@ -1532,8 +1532,21 @@
                                             row.appendChild(a);
                                         });
                                     }
+                                    var GET_IN_TOUCH = "https://www.easewithnikhil.com/ease_landing.html";
+                                    function ensureGetInTouch() {
+                                        document.querySelectorAll("a.framer-DgToN").forEach(function (btn) {
+                                            var t = ((btn.textContent || "").replace(/\s+/g, " ").trim());
+                                            if (!/Get in touch/i.test(t) && btn.getAttribute("data-nce-sid") !== "h05e2t") return;
+                                            if (btn.getAttribute("href") !== GET_IN_TOUCH) {
+                                                btn.setAttribute("href", GET_IN_TOUCH);
+                                            }
+                                            btn.setAttribute("target", "_blank");
+                                            btn.setAttribute("rel", "noopener noreferrer");
+                                        });
+                                    }
                                     function ensure() {
                                         LINKS.forEach(applyOne);
+                                        ensureGetInTouch();
                                     }
                                     function bindCtaHover() {
                                         document.querySelectorAll("a.framer-DgToN").forEach(function (btn) {
