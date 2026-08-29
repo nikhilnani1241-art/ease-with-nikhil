@@ -1494,40 +1494,43 @@
                             <script>
                                 (function () {
                                     var LINKS = [
-                                        { name: "Instagram", href: "https://www.instagram.com/nikhil_leap/", blank: true },
-                                        { name: "Email", href: "mailto:connect@easewithnikhil.com", blank: false },
-                                        { name: "Phone", href: "tel:+919703318999", blank: false }
+                                        { name: "Instagram", href: "https://www.instagram.com/nikhil_leap/", blank: true, label: "@nikhil_leap" },
+                                        { name: "Email", href: "mailto:connect@easewithnikhil.com", blank: false, label: "connect@easewithnikhil.com" },
+                                        { name: "Phone", href: "tel:+919703318999", blank: false, label: "+91-9703318999" }
                                     ];
                                     var WRAP = "display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none;cursor:pointer;pointer-events:auto;position:relative;z-index:5";
-                                    function applyOne(item) {
-                                        var row = document.querySelector('[data-framer-name="' + item.name + '"]');
-                                        if (!row) return;
-                                        if (row.tagName === "A") {
-                                            row.setAttribute("href", item.href);
-                                            if (item.blank) {
-                                                row.setAttribute("target", "_blank");
-                                                row.setAttribute("rel", "noopener noreferrer");
-                                            }
-                                            return;
-                                        }
-                                        var inner = row.querySelector("a");
-                                        if (inner) {
-                                            inner.setAttribute("href", item.href);
-                                            if (item.blank) {
-                                                inner.setAttribute("target", "_blank");
-                                                inner.setAttribute("rel", "noopener noreferrer");
-                                            }
-                                            return;
-                                        }
-                                        var a = document.createElement("a");
-                                        a.setAttribute("href", item.href);
+                                    function setHref(el, item) {
+                                        el.setAttribute("href", item.href);
                                         if (item.blank) {
-                                            a.setAttribute("target", "_blank");
-                                            a.setAttribute("rel", "noopener noreferrer");
+                                            el.setAttribute("target", "_blank");
+                                            el.setAttribute("rel", "noopener noreferrer");
                                         }
-                                        a.style.cssText = WRAP;
-                                        while (row.firstChild) a.appendChild(row.firstChild);
-                                        row.appendChild(a);
+                                    }
+                                    function setLabel(row, item) {
+                                        if (!item.label) return;
+                                        var p = row.querySelector("p");
+                                        if (p && p.textContent.replace(/\s+/g, " ").trim() !== item.label) {
+                                            p.textContent = item.label;
+                                        }
+                                    }
+                                    function applyOne(item) {
+                                        document.querySelectorAll('[data-framer-name="' + item.name + '"]').forEach(function (row) {
+                                            setLabel(row, item);
+                                            if (row.tagName === "A") {
+                                                setHref(row, item);
+                                                return;
+                                            }
+                                            var inner = row.querySelector("a");
+                                            if (inner) {
+                                                setHref(inner, item);
+                                                return;
+                                            }
+                                            var a = document.createElement("a");
+                                            setHref(a, item);
+                                            a.style.cssText = WRAP;
+                                            while (row.firstChild) a.appendChild(row.firstChild);
+                                            row.appendChild(a);
+                                        });
                                     }
                                     function ensure() {
                                         LINKS.forEach(applyOne);
