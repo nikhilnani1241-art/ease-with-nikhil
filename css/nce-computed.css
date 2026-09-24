@@ -264,12 +264,15 @@ html .framer-1vno4xq{
     pointer-events:none !important
 }
 
-html [data-framer-name="Instagram"],
-html [data-framer-name="Instagram"] a,
-html [data-framer-name="Email"],
-html [data-framer-name="Email"] a,
-html [data-framer-name="Phone"],
-html [data-framer-name="Phone"] a{
+html .framer-1we1b5t [data-framer-name="Instagram"],
+html .framer-1we1b5t [data-framer-name="Instagram"] a,
+html .framer-1we1b5t [data-framer-name="Email"],
+html .framer-1we1b5t [data-framer-name="Email"] a,
+html .framer-1we1b5t [data-framer-name="Phone"],
+html .framer-1we1b5t [data-framer-name="Phone"] a,
+html a.framer-1xnu4w6,
+html a.framer-6vlmyz,
+html a.framer-b3y19r{
     pointer-events:auto !important;
     cursor:pointer;
     position:relative;
@@ -315,4 +318,295 @@ html .framer-DgToN[data-nce-sid="h05e2t"].hover .framer-178cdm9{
 html .framer-DgToN[data-nce-sid="h05e2t"]:hover .framer-text,
 html .framer-DgToN[data-nce-sid="h05e2t"].hover .framer-text{
     --framer-text-color:var(--token-9fa21eb1-42a3-4c38-b373-a2df50689971, rgb(61, 63, 64))
+}
+
+/* 1–2. Hero title + wider description */
+html .framer-l6c3b .framer-46tpku{
+    max-width:920px !important;
+    width:100% !important
+}
+html .framer-l6c3b .framer-1nnzs3q{
+    max-width:920px !important;
+    width:auto !important;
+    flex:1 1 auto !important
+}
+html .framer-l6c3b .framer-qk173y{
+    max-width:1100px !important;
+    width:100% !important;
+    flex:1 1 auto !important
+}
+html .framer-l6c3b .framer-6kpgi6{
+    width:100% !important;
+    max-width:1100px !important
+}
+html .framer-l6c3b .framer-82yb2r{
+    width:100% !important;
+    max-width:1100px !important
+}
+
+/* 4. Remove 8 spots card and expand 90-days content */
+html .framer-l6c3b .framer-124us7i{
+    display:none !important
+}
+html .framer-l6c3b .framer-e3fpdo{
+    justify-content:center !important;
+    gap:0 !important;
+    padding:40px 56px !important
+}
+html .framer-l6c3b .framer-w45so1{
+    max-width:860px !important;
+    width:100% !important;
+    flex:1 1 auto !important;
+    align-items:center !important;
+    padding:48px 24px !important;
+    gap:28px !important
+}
+html .framer-l6c3b .framer-1n7es6z,
+html .framer-l6c3b .framer-15ouef9,
+html .framer-l6c3b .framer-15ouef9 .framer-text{
+    text-align:center !important;
+    --framer-text-alignment:center !important;
+    align-items:center !important;
+    width:100% !important
+}
+html .framer-l6c3b .framer-15ouef9 .framer-text{
+    font-size:62px !important
+}
+
+/* 5. RRR: keep large 1/2/3, replace small 01/02/03 with concept icons */
+html .framer-7k9c3y .framer-ow3852{
+    width:42px !important;
+    height:42px !important
+}
+html .framer-7k9c3y .framer-10cz8mt{
+    padding:6px !important
+}
+html .framer-7k9c3y .framer-ow3852 img{
+    display:block !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important
+}
+html .framer-7k9c3y .framer-ow3852 .nce-rrr-icon{
+    display:none !important
+}
+
+/* How can I help you?: equal icon boxes, no stretch */
+html [data-framer-name="Single Faq"] > .framer-nar4bk,
+html [data-framer-name="Single Faq"] > .framer-1v96hmk,
+html [data-framer-name="Single Faq"] > .framer-1hb11a,
+html [data-framer-name="Single Faq"] > .framer-3igt10{
+    width:72px !important;
+    height:72px !important;
+    flex:none !important;
+    position:relative !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    align-self:flex-start !important;
+    overflow:hidden !important
+}
+html [data-framer-name="Single Faq"] [data-framer-background-image-wrapper] > img:not(.nce-problem-icon){
+    display:none !important
+}
+html [data-framer-name="Single Faq"] img.nce-problem-icon,
+html [data-framer-name="Single Faq"] svg.nce-problem-icon{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    display:block !important;
+    pointer-events:none;
+    background:transparent !important
+}
+
+/* Style of Work: enlarge concept icons equally, keep 1/2/3 */
+html .framer-7k9c3y .framer-2j6d0h,
+html .framer-7k9c3y .framer-ybovhd{
+    overflow:visible !important;
+    height:auto !important
+}
+html .framer-s1yf4f-container .framer-ybovhd .framer-text::before,
+html .framer-1xrj0gt-container .framer-ybovhd .framer-text::before,
+html .framer-1mt4bhz-container .framer-ybovhd .framer-text::before{
+    content:"" !important;
+    display:block !important;
+    width:112px !important;
+    height:112px !important;
+    margin:0 auto 14px !important;
+    background-repeat:no-repeat !important;
+    background-position:center center !important;
+    background-size:contain !important;
+    flex:none
+}
+html .framer-s1yf4f-container .framer-ybovhd .framer-text::before{
+    background-image:url("../images/icons/recognise.png") !important
+}
+html .framer-1xrj0gt-container .framer-ybovhd .framer-text::before{
+    background-image:url("../images/icons/recover.png") !important
+}
+html .framer-1mt4bhz-container .framer-ybovhd .framer-text::before{
+    background-image:url("../images/icons/reconnect.png") !important
+}
+html .framer-l6c3b .framer-y6lvvn{
+    overflow:hidden
+}
+html .framer-l6c3b .framer-y6lvvn::before,
+html .framer-l6c3b .framer-y6lvvn::after{
+    content:"";
+    position:absolute;
+    pointer-events:none;
+    z-index:0;
+    border-radius:50%;
+    filter:blur(2px)
+}
+html .framer-l6c3b .framer-y6lvvn::before{
+    width:280px;
+    height:280px;
+    left:-90px;
+    top:18%;
+    background:radial-gradient(circle, rgba(206,147,69,.16), transparent 68%)
+}
+html .framer-l6c3b .framer-y6lvvn::after{
+    width:340px;
+    height:220px;
+    right:-80px;
+    bottom:8%;
+    background:radial-gradient(circle, rgba(245,242,216,.12), transparent 70%);
+    border-radius:60% 40% 55% 45%
+}
+html .framer-l6c3b .framer-r0szf5,
+html .framer-l6c3b .framer-7k9c3y{
+    position:relative;
+    z-index:1
+}
+
+html .framer-jsD8U > a[href^="tel:"],
+html .framer-jsD8U [data-framer-name="Single Faq"] a[href^="tel:"],
+html .framer-fD7rN > a[href^="tel:"],
+html .framer-jqk7fg-container > a[href^="tel:"]{
+    display:contents
+}
+html .nce-testimonial-jithendra .framer-tdlmu7,
+html .nce-testimonial-jithendra .framer-tdlmu7 .framer-text,
+html .nce-testimonial-jithendra .framer-1t8zf9t,
+html .nce-testimonial-jithendra .framer-1t8zf9t .framer-text,
+html .nce-testimonial-jithendra .framer-1fg67l5,
+html .nce-testimonial-jithendra .framer-1fg67l5 .framer-text{
+    white-space:pre-wrap !important;
+    overflow-wrap:anywhere;
+    word-break:break-word
+}
+html .nce-story-track .framer-UwP8R,
+html .nce-story-slide .framer-UwP8R,
+html .nce-jithendra-slide,
+html .nce-testimonial-jithendra{
+    width:100% !important;
+    max-width:100% !important;
+    height:auto !important;
+    overflow:visible !important
+}
+html .nce-story-track .framer-3rqka1,
+html .nce-story-slide .framer-3rqka1,
+html .nce-testimonial-jithendra .framer-3rqka1,
+html .nce-testimonial-jithendra .framer-1g3ii23,
+html .nce-testimonial-jithendra .framer-v3trg1{
+    overflow:visible !important
+}
+html .nce-testimonial-jithendra .framer-1g3ii23{
+    width:100% !important;
+    max-width:100% !important;
+    padding-right:0;
+    box-sizing:border-box
+}
+html .nce-testimonial-jithendra .framer-v3trg1{
+    flex:1 1 auto !important;
+    width:auto !important;
+    min-width:0 !important
+}
+html .nce-testimonial-jithendra .framer-1xaw4ro img{
+    object-fit:cover !important;
+    object-position:center top !important
+}
+html .framer-16j44rp .framer-1035v0p-container,
+html .framer-16j44rp .framer-jqk7fg-container{
+    height:auto !important;
+    min-height:473px;
+    max-width:100%;
+    overflow:hidden
+}
+html .framer-16j44rp .nce-story-track{
+    max-width:100%
+}
+html .framer-16j44rp .framer--slideshow-controls{
+    z-index:3
+}
+@media (max-width:767.98px){
+    html .framer-16j44rp .framer-jqk7fg-container,
+    html .framer-16j44rp .framer-1035v0p-container{
+        min-height:637px;
+        width:100% !important;
+        max-width:350px
+    }
+}
+
+@media (max-width:1199.98px){
+    html .framer-l6c3b .framer-e3fpdo{
+        padding:32px 28px !important
+    }
+    html .framer-l6c3b .framer-15ouef9 .framer-text{
+        font-size:42px !important
+    }
+    html .framer-l6c3b .framer-46tpku,
+    html .framer-l6c3b .framer-82yb2r{
+        max-width:100% !important
+    }
+    html [data-framer-name="Single Faq"] > .framer-nar4bk,
+    html [data-framer-name="Single Faq"] > .framer-1v96hmk,
+    html [data-framer-name="Single Faq"] > .framer-1hb11a,
+    html [data-framer-name="Single Faq"] > .framer-3igt10{
+        width:64px !important;
+        height:64px !important
+    }
+    html .framer-s1yf4f-container .framer-ybovhd .framer-text::before,
+    html .framer-1xrj0gt-container .framer-ybovhd .framer-text::before,
+    html .framer-1mt4bhz-container .framer-ybovhd .framer-text::before{
+        width:96px !important;
+        height:96px !important;
+        margin:0 auto 12px !important
+    }
+    html .framer-7k9c3y .framer-ow3852{
+        width:38px !important;
+        height:38px !important
+    }
+}
+@media (max-width:767.98px){
+    html .framer-l6c3b .framer-15ouef9 .framer-text{
+        font-size:32px !important
+    }
+    html .framer-l6c3b .framer-w45so1{
+        padding:28px 8px !important
+    }
+    html [data-framer-name="Single Faq"] > .framer-nar4bk,
+    html [data-framer-name="Single Faq"] > .framer-1v96hmk,
+    html [data-framer-name="Single Faq"] > .framer-1hb11a,
+    html [data-framer-name="Single Faq"] > .framer-3igt10{
+        width:56px !important;
+        height:56px !important
+    }
+    html .framer-s1yf4f-container .framer-ybovhd .framer-text::before,
+    html .framer-1xrj0gt-container .framer-ybovhd .framer-text::before,
+    html .framer-1mt4bhz-container .framer-ybovhd .framer-text::before{
+        width:84px !important;
+        height:84px !important;
+        margin:0 auto 10px !important
+    }
+    html .framer-7k9c3y .framer-ow3852{
+        width:34px !important;
+        height:34px !important
+    }
 }
